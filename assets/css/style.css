@@ -1,0 +1,89 @@
+* {
+  /* border: solid 1px red; */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --dark: darkslategray;
+  --light: white;
+  --aqua: aquamarine;
+}
+
+body {
+  background-color: var(--dark);
+  font-size: 16px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 200%;
+  color: var(--aqua);
+  position: relative;
+  margin-top: 20px;
+}
+
+.page-description {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  color: var(--light);
+}
+
+.snippet-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  padding: 1em;
+  flex: 1 0 365px;
+  margin: 1em;
+  border-style: dashed;
+  border-color: var(--aqua);
+  /* max-width: 350px; */
+  display: flex;
+  flex-direction: column;
+}
+
+#card-header {
+  margin-top: -30px;
+  font-size: 150%;
+  text-align: center;
+  border: solid var(--aqua);
+  border-radius: 10px;
+  background-color: var(--dark);
+  color: var(--aqua);
+}
+
+#card-description {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  text-align: center;
+  color: var(--aqua);
+}
+
+#code-snippet {
+  border-radius: 10px;
+  background-image: linear-gradient(rgb(4, 250, 168) 0%, rgb(1, 70, 47) 100%);
+  font-family: monospace;
+  align-self: stretch;
+}
+
+footer {
+  text-align: center;
+  font-size: 150%;
+  color: var(--aqua);
+}
+
+.card:hover,
+.card:hover #card-header {
+  box-shadow: inset 0px 0px 8px rgba(4, 250, 168), 0 0 15px rgba(1, 70, 47),
+    0px 0px 8px rgba(4, 250, 168), 0 0 15px rgba(1, 70, 47);
+}
